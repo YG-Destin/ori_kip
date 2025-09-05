@@ -160,7 +160,7 @@
 
             chainArray.forEach(cardNum => {
                 const img = document.createElement("img");
-                img.src = `cards/${cardNum.toString().padStart(2, '0')}.jpg`;
+                img.src = `cards/${cardNum.toString().padStart(2, '0')}.png`;
                 img.dataset.number = cardNum;
                 img.onclick = () => applyReverseChain(cardNum);
                 container.appendChild(img);
